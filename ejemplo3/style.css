@@ -1,0 +1,14 @@
+h2 {
+    color: darkblue;
+    font-size: 20px;
+    font-family: arial;
+}
+
+/* Selecciona todos los párrafos */
+p {
+    color: darkgray;
+}
+
+#tituloinicial {
+    background: gray;
+}
