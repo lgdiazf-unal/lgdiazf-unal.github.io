@@ -2,14 +2,14 @@
 title: Nginx Proxy Manager
 date: 2025-10-27 20:00:00 -5000
 categories: [NETWORK, PROXY]
-tags: [dns,proxy,ssl]
+tags: [proxy,ssl]
 ---
 
 Nginx Proxy Manager (NPM) es una herramienta de código abierto y gratuita que proporciona una interfaz web fácil de usar para gestionar proxies inversos basados en Nginx, facilitando la exposición segura de servicios web en una red.
 
 ## Instalacion
 
-Se depliega la solucion como un contenedor de docker.
+Se depliega la solucion como un contenedor de docker, creando el siguiente ***docker-compose.yml***
 
 ```yml
 services:
@@ -35,4 +35,15 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+```
+Para desplegarlo basta con ejecutar el siguiente comando:
+
+```bash
+docker compose up -d
+```
+Desde un navegador se debe entrar a <ip_seervidor:81>, se debe ingresar con las siguientes credenciales:
+
+```conf
+Email:    admin@example.com
+Password: changeme
 ```
