@@ -14,6 +14,7 @@ WORKDIR /app
 COPY ./Gemfile  .
 
 RUN bundle
+RUN bundle install
 
 
 
