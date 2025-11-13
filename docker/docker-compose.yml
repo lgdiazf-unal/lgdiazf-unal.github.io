@@ -1,10 +1,9 @@
 services:
   ruby:
     build : .
-    command : "sleep 365d && "
+    command : "sleep 365d &&"
     volumes:
       - "..:/app"
-    
     ports:
       - "4000:4000"
       - "35729:35729"
