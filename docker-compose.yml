@@ -5,7 +5,7 @@ services:
     command : "bundle exec jekyll serve -l -o --host=0.0.0.0"
     volumes:
       - "./_posts:/app/_posts"
-      - "./assests:/app/assests"
+      - "./assets:/app/assets"
     ports:
       - "4000:4000"
       - "35729:35729"
